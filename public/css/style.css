@@ -1,0 +1,156 @@
+/* File: public/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #716775;
+    color: white;
+}
+tr:hover {background-color: #f5f5f5;}
+.btn {
+    padding: 8px 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+.btn-info {background-color: #2196F3;}
+.btn-success {background-color: #4CAF50;}
+.btn-danger {background-color: #f44336;}
+
+
+
+
+
+/*This is for my Fetch info*/
+/*.modal {*/
+/*    display: none;*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-color: rgba(0, 0, 0, 0.5);*/
+/*    z-index: 999; !* Lower z-index value *!*/
+/*}*/
+
+.modal-content {
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Higher z-index value */
+}
+
+/*This is for my Modals */
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Adjust as needed to fit your layout */
+}
+
+/*This is for my Images */
+
+/*.slides {*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    display: flex; !* Use flexbox to arrange the images horizontally *!*/
+/*}*/
+
+/*.slide {*/
+/*    margin-right: 20px; !* Add some spacing between the images *!*/
+/*}*/
+
+#slider {
+    width: 720px;
+    height: 400px;
+    /* overflow: hidden; */ /* Remove this line */
+}
+
+.slides {
+    /* display: block; */ /* Remove this line */
+    width: auto; /* Adjust width as needed */
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to arrange the images horizontally */
+}
+
+.slide {
+    margin-right: 20px; /* Add some spacing between the images */
+    /* width: 720px; */ /* Remove fixed width */
+    height: 400px;
+    list-style-type: none;
+}
+
+.house-image {
+    width: 500px; /* Adjust the width of the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.dog-image {
+    width: 500px; /* Adjust the width of the images */
+    height: 375px; /* Maintain aspect ratio */
+}
+
+
+/*Adjusting the text in the container for name and food*/
+.container {
+    /*max-width: 50px; !* Set maximum width *!*/
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Add padding to the sides */
+}
+
+
+.order-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+    max-width: 400px; /* Adjust the max-width to make it more constricted */
+}
+
+
+.order-info {
+    /* Your styles for order information */
+}
+
+.remove-order {
+    /* Styles for remove order button */
+    color: red; /* Set color to red */
+    position: absolute; /* Position it absolutely */
+    top: 5px; /* Adjust top position */
+    right: 5px; /* Move it to the right */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+
+
+
